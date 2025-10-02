@@ -68,7 +68,7 @@ const Index = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 mt-12">
-          <div className="space-y-12">
+          <div className="space-y-16">
             <Section title="Business">
               <ExperienceItem
                 role="Co-Founder & CEO"
