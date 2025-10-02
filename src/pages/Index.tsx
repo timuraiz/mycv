@@ -44,24 +44,38 @@ const Index = () => {
           <div className="space-y-12">
             <Section title="Products">
               <ProjectItem
-                name="CollabSpace"
-                url="https://example.com"
-                description="Virtual collaboration platform"
+                name="Whoelse"
+                url="https://www.producthunt.com/products/whoelse?launch=whoelse"
+                description="Web application built with React + Python"
               />
               <ProjectItem
-                name="TrackMyDebt"
-                url="https://example.com"
-                description="Debt tracking and payment reminders"
+                name="Cavora"
+                url="https://www.producthunt.com/products/cavora/launches"
+                description="Browser extension built with WXT + React + Python"
               />
               <ProjectItem
-                name="DataInsights"
-                url="https://example.com"
-                description="Make better decisions with data analytics"
+                name="AYZ Focus"
+                url="#"
+                description="Mobile time tracker with Pomodoro technique built with React Native + Go"
               />
               <ProjectItem
-                name="QuickEffects"
-                url="https://example.com"
-                description="Photo effects with one click"
+                name="Vendera POS"
+                url="https://vendera.live/"
+                description="Point of sale system for Thai region built with Next.js"
+              />
+            </Section>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 mt-12">
+          <div className="space-y-12">
+            <Section title="Business">
+              <ExperienceItem
+                role="Co-Founder & CEO"
+                company="Vendera Agency"
+                companyUrl="https://vendera.agency"
+                meta="Nov 2024 - Jun 2025"
+                description="Building web & mobile applications for established businesses"
               />
             </Section>
 
@@ -74,18 +88,6 @@ const Index = () => {
               />
             </Section>
           </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 mt-12">
-          <Section title="Business">
-            <ExperienceItem
-              role="Co-Founder & CEO"
-              company="Vendera Agency"
-              companyUrl="https://vendera.agency"
-              meta="Nov 2024 - Jun 2025"
-              description="Building web & mobile applications for established businesses"
-            />
-          </Section>
 
           <Section title="Skills">
             <div className="flex flex-wrap gap-2">
