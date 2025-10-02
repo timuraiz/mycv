@@ -2,77 +2,47 @@ import { ProfileHeader } from "@/components/ProfileHeader";
 import { Section } from "@/components/Section";
 import { ExperienceItem } from "@/components/ExperienceItem";
 import { ProjectItem } from "@/components/ProjectItem";
-import { ContactCTA } from "@/components/ContactCTA";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { FloatingContact } from "@/components/FloatingContact";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
-      
-      <main className="max-w-4xl mx-auto px-6 py-16">
+      <FloatingContact />
+
+      <main className="max-w-4xl mx-auto px-6 py-16 md:ml-[calc(50%+2rem)]">
         <ProfileHeader />
-        
+
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           <div className="space-y-12">
-            <Section title="Business">
-              <ExperienceItem
-                role="Co-Founder"
-                company="Tech Ventures Inc"
-                companyUrl="https://example.com"
-                description="Scaled development agency to $100k in revenue. Built 15+ apps"
-              />
-              <ExperienceItem
-                role="Co-Founder"
-                company="Digital Solutions LLC"
-                companyUrl="https://example.com"
-                description="Built and launched 10 apps in 6 months. Scaled to 100k+ downloads"
-              />
-              <ExperienceItem
-                role="Founder"
-                company="AI Platform"
-                companyUrl="https://example.com"
-                description="10,000+ users, 100+ paying customers, 1M+ social media views"
-              />
-              <ExperienceItem
-                role="Founder"
-                company="Tech YouTube Channel"
-                companyUrl="https://youtube.com"
-                description="30,000+ subscribers, 5M+ views"
-              />
-            </Section>
-
             <Section title="Experience">
               <ExperienceItem
-                role="Growth Intern"
-                company="StartupCo"
-                companyUrl="https://example.com"
-                meta="YC Winter '24"
-                description="Generated 200k+ social media views & 2.5k+ downloads"
+                role="Go Developer"
+                company="Yandex.Pay"
+                companyUrl="https://yandex.com/pay"
+                meta="Jan 2025 - Present · Hybrid"
+                description="Engineered real-time data synchronization platform and enterprise anonymization layer protecting millions of user records"
               />
               <ExperienceItem
-                role="Software Engineering Intern"
-                company="Research Institute"
-                companyUrl="https://example.com"
-                description="Developed ML-backed simulation for government project"
+                role="Python/Go Developer"
+                company="Yandex.Billing"
+                companyUrl="https://yandex.com"
+                meta="Oct 2022 - Jan 2025 · Hybrid"
+                description="Drove microservices migration from monolith, cutting deployment cycles by 70% and enabling independent team velocity"
               />
               <ExperienceItem
-                role="Marketing Intern"
-                company="EdTech Startup"
-                companyUrl="https://example.com"
-                description="Generated 20M+ social media views & $15k+ in revenue"
-              />
-              <ExperienceItem
-                role="Research Intern"
-                company="University Lab"
-                companyUrl="https://example.com"
-                description="Researched performance optimization. Co-authored & published research paper"
+                role="Python Developer"
+                company="Yandex.ABC"
+                companyUrl="https://yandex.com"
+                meta="Jul 2022 - Oct 2022 · Moscow, Russia"
+                description="Delivered production-ready duty management system serving 10,000+ employees across Yandex infrastructure"
               />
             </Section>
           </div>
 
           <div className="space-y-12">
-            <Section title="Projects">
+            <Section title="Products">
               <ProjectItem
                 name="CollabSpace"
                 url="https://example.com"
@@ -95,15 +65,41 @@ const Index = () => {
               />
             </Section>
 
-            <Section title="Languages">
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                English (native), Spanish (fluent), French (conversational)
-              </p>
+            <Section title="Education">
+              <ExperienceItem
+                role="Bachelor of Science in Computer Science"
+                company="Innopolis University"
+                companyUrl="https://innopolis.university"
+                description="Graduated with a degree in Computer Science"
+              />
             </Section>
           </div>
         </div>
 
-        <ContactCTA />
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 mt-12">
+          <Section title="Business">
+            <ExperienceItem
+              role="Co-Founder & CEO"
+              company="Vendera Agency"
+              companyUrl="https://vendera.agency"
+              meta="Nov 2024 - Jun 2025"
+              description="Building web & mobile applications for established businesses"
+            />
+          </Section>
+
+          <Section title="Skills">
+            <div className="flex flex-wrap gap-2">
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Go</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">TypeScript</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Python</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">React</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">React Native</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Next.js</span>
+              <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">FastAPI</span>
+            </div>
+          </Section>
+        </div>
+
       </main>
     </div>
   );
