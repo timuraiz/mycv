@@ -11,7 +11,7 @@ const Index = () => {
       <ThemeToggle />
       <FloatingContact />
 
-      <main className="max-w-4xl mx-auto px-6 py-16 md:ml-[calc(50%+2rem)]">
+      <main className="max-w-4xl mx-auto px-6 py-16">
         <ProfileHeader />
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
