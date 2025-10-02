@@ -50,19 +50,19 @@ const Index = () => {
             <ProjectItem
               name="Cavora"
               url="https://www.producthunt.com/products/cavora/launches"
-              description="AI-powered YouTube learning retention · WXT + React + Python"
+              description="AI-powered YouTube learning retention"
               skills={["WXT", "React", "Python"]}
             />
             <ProjectItem
               name="AYZ Focus"
               url="#"
-              description="Time tracking with Pomodoro · React Native + Go"
+              description="Time tracking like Pomodoro"
               skills={["React Native", "Go"]}
             />
             <ProjectItem
               name="Vendera POS"
               url="https://vendera.live/"
-              description="Point-of-sale for Thai businesses · Next.js + React Native"
+              description="Point-of-sale for Thai businesses"
               skills={["Next.js", "React Native"]}
             />
           </Section>
