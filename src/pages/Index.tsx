@@ -61,7 +61,7 @@ const Index = () => {
             />
             <ProjectItem
               name="Vendera POS"
-              url="https://vendera.live/"
+              url="https://kassa.vendera.live/sign-in"
               description="Point-of-sale for Thai businesses"
               skills={["Next.js", "React Native"]}
             />
