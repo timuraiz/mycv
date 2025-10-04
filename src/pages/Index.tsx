@@ -5,11 +5,16 @@ import { ExperienceItem } from "@/components/ExperienceItem";
 import { ProjectItem } from "@/components/ProjectItem";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { FloatingContact } from "@/components/FloatingContact";
+import Button from "@/components/Button";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <ThemeToggle />
+      <div className="fixed top-6 right-6 flex gap-2 z-50">
+        <Button />
+        <ThemeToggle />
+      </div>
+
       <FloatingContact />
 
       <main className="max-w-4xl mx-auto px-6 py-16">

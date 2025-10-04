@@ -18,13 +18,13 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-6 right-6 p-2 rounded-lg hover:bg-secondary transition-colors"
+      className="p-2 rounded-lg hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (
-        <Moon className="w-5 h-5" />
+        <Moon className="w-5 h-5" width={20} height={20} />
       ) : (
-        <Sun className="w-5 h-5" />
+        <Sun className="w-5 h-5" width={20} height={20} />
       )}
     </button>
   );
