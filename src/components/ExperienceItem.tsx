@@ -12,9 +12,9 @@ export const ExperienceItem = ({ role, company, companyUrl, description, meta }:
       <div className="flex flex-wrap items-baseline gap-1">
         <span className="font-medium">{role} @</span>
         {companyUrl ? (
-          <a 
-            href={companyUrl} 
-            target="_blank" 
+          <a
+            href={companyUrl}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:underline font-medium"
           >
@@ -23,9 +23,11 @@ export const ExperienceItem = ({ role, company, companyUrl, description, meta }:
         ) : (
           <span className="font-medium">{company}</span>
         )}
-        {meta && <span className="text-muted-foreground text-sm">({meta})</span>}
+        {meta && <span className="text-foreground/100 text-sm">({meta})</span>}
       </div>
-      <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+      <p className="text-muted-foreground text-sm leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 };
