@@ -60,7 +60,7 @@ const Index = () => {
             />
             <ProjectItem
               name="AYZ Focus"
-              url="#"
+              url="https://github.com/timuraiz/time-tracker"
               description="Time tracking like Pomodoro"
               skills={["React Native", "Go"]}
             />
