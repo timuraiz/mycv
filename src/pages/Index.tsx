@@ -24,9 +24,16 @@ const Index = () => {
           <Section title="Experience">
             <ExperienceItem
               role="Go Developer"
+              company="VK"
+              companyUrl="https://vk.com"
+              meta="Nov 2025 - Present · Hybrid"
+              description="Building new A/B testing platform handling 1M+ RPS"
+            />
+            <ExperienceItem
+              role="Go Developer"
               company="Yandex.Pay"
               companyUrl="https://pay.yandex.ru/qr"
-              meta="Jan 2025 - Present · Hybrid"
+              meta="Jan 2025 - Nov 2025 · Hybrid"
               description="Shipped features to run QR payments for small/average businesses"
             />
             <ExperienceItem

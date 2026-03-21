@@ -9,8 +9,8 @@ interface ExperienceItemProps {
 export const ExperienceItem = ({ role, company, companyUrl, description, meta }: ExperienceItemProps) => {
   return (
     <div className="space-y-1">
-      <div className="flex flex-wrap items-baseline gap-1">
-        <span className="font-medium">{role} @</span>
+      <div>
+        <span className="font-medium">{role} @</span>{" "}
         {companyUrl ? (
           <a
             href={companyUrl}
@@ -23,7 +23,7 @@ export const ExperienceItem = ({ role, company, companyUrl, description, meta }:
         ) : (
           <span className="font-medium">{company}</span>
         )}
-        {meta && <span className="text-foreground/100 text-sm">({meta})</span>}
+        {meta && <div className="text-foreground/60 text-sm">{meta}</div>}
       </div>
       <p className="text-muted-foreground text-sm leading-relaxed">
         {description}
