@@ -56,7 +56,7 @@ const Index = () => {
             <ProjectItem
               name="SpeakPeak"
               url="https://www.speakpeak.online/"
-              description="English speaking practice powered by AI"
+              description="English speaking practice with real human"
               skills={["Next.js"]}
             />
             <ProjectItem
