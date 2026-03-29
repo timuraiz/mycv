@@ -54,6 +54,12 @@ const Index = () => {
 
           <Section title="Products">
             <ProjectItem
+              name="SpeakPeak"
+              url="https://www.speakpeak.online/"
+              description="English speaking practice powered by AI"
+              skills={["Next.js"]}
+            />
+            <ProjectItem
               name="Whoelse"
               url="https://www.producthunt.com/products/whoelse?launch=whoelse"
               description="Discover product alternatives instantly"
